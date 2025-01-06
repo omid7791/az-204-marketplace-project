@@ -54,7 +54,8 @@ export default function RootLayout({ children }) {
       >
         <React.StrictMode>
           <MsalProvider instance={msalInstance}>
-            <NavBar>{children}</NavBar>
+            <NavBar />
+            {children}
           </MsalProvider>
         </React.StrictMode>
       </body>
